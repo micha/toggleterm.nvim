@@ -414,19 +414,19 @@ local function setup_commands()
 
   command(
     "ToggleTermSendVisualLines",
-    function(args) M.send_lines_to_terminal("visual_lines", true, args) end,
+    function(args) M.send_lines_to_terminal("visual_lines", false, args) end,
     { range = true, nargs = "?" }
   )
 
   command(
     "ToggleTermSendVisualSelection",
-    function(args) M.send_lines_to_terminal("visual_selection", true, args) end,
+    function(args) M.send_lines_to_terminal("visual_selection", false, args) end,
     { range = true, nargs = "?" }
   )
 
   command(
     "ToggleTermSendCurrentLine",
-    function(args) M.send_lines_to_terminal("single_line", true, args) end,
+    function(args) M.send_lines_to_terminal("single_line", false, args) end,
     { nargs = "?" }
   )
 
